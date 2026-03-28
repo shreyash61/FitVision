@@ -1,0 +1,8 @@
+{
+  "name": "FitVision AI",
+  "description": "AI-powered fitness companion with image-based health analysis, personalized workout/meal plans, and voice assistance.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

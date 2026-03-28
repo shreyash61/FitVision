@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user fitness profile and analysis history.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "height": { "type": "number" },
+        "weight": { "type": "number" },
+        "workoutPreference": { "type": "string" },
+        "mealType": { "type": "string" },
+        "level": { "type": "string" },
+        "goal": { "type": "string" },
+        "lastAnalysis": { "type": "object" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "height", "weight"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile document."
+    }
+  }
+}
